@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FilmNestle</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark border-bottom border-body mb-5 py-3" data-bs-theme="dark">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">FilmNestle</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" id="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- MAIN -->
+    <main class="container mb-5">
+      <h3 id="result-line" class="mb-5 text-center">Top #20 Trending</h3>
+      <div id="results" class="mx-auto justify-content-center gap-5 d-flex flex-wrap">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="day-tab" data-bs-toggle="tab" data-bs-target="#day-tab-pane" type="button" role="tab" aria-controls="day-tab-pane" aria-selected="true" onclick="hideWeekTab()">Day</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="week-tab" data-bs-toggle="tab" data-bs-target="#week-tab-pane" type="button" role="tab" aria-controls="week-tab-pane" aria-selected="false" onclick="hideDayTab()">Week</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active d-flex flex-wrap gap-4 justify-content-center" id="day-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+          <div class="tab-pane fade d-flex flex-wrap gap-4 justify-content-center d-none" id="week-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
+        </div>
+      </div>
+    </main>
+  <!-- FOOTER -->
+    <footer class="container py-4 mt-4 text-body-secondary border-top">
+      &copy; FilmNestle, 2023
+    </footer>
+  </div>
+</main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
